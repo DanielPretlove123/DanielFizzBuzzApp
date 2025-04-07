@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>InfoTrackFizzBuzz.Application</RootNamespace>
+    <AssemblyName>InfoTrackFizzBuzz.Application</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>11fb0937-650f-4ec3-abb3-7315377ef492</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" />
+    <PackageReference Include="Ardalis.Specification" />
+    <PackageReference Include="AutoMapper" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\GameRounds\Delete\" />
+    <Folder Include="Services\GameRounds\Update\" />
+    <Folder Include="Services\GameSessions\Delete\" />
+    <Folder Include="Services\GameSessions\Update\" />
+  </ItemGroup>
+
+</Project>
